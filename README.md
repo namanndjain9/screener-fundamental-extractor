@@ -1,31 +1,54 @@
-# Investment Research Automation Toolkit
+# Screener Fundamental Analyzer
 
-This repository contains Python-based tools for automating equity research and analysis of company disclosures.
+An automated **equity fundamental analysis** tool that extracts company financials and valuation ratios from **Screener.in** and generates a **fully formatted Excel analysis dashboard**.
 
-## Projects Included
+Designed for **investment research, equity screening, and portfolio analysis**, this project automates repetitive data collection and standardizes company comparisons at scale.
 
-### 1. Automated Equity Research & Financial Screening
-- Extracts live financial data from Screener using Selenium
-- Computes key valuation, profitability, and quality metrics
-- Outputs standardized, analysis-ready Excel dashboards
+---
 
-### 2. AI-Driven Concall & Financial Document Analysis
-- Automatically collects concall/investor presentation PDFs
-- Uses vision-enabled LLMs (Ollama) to extract financial and qualitative insights
-- Converts unstructured disclosures into structured datasets
+## 🚀 Key Features
 
-## Tech Stack
-- Python
-- Selenium
-- Pandas
-- Excel Automation
-- Vision-based LLMs (Ollama)
-- PyMuPDF
+- 🔍 **Automated Fundamental Data Extraction**
+  - Revenue, EBITDA, PAT, Net Worth, Debt
+  - 5-Year Revenue & PAT CAGR
+  - Market price and balance sheet metrics
 
-## Use Cases
-- Buy-side equity research
-- Macro & sector analysis
-- Automated monitoring of company disclosures
+- 📊 **Valuation & Quality Ratios**
+  - Market Cap, EPS, EV/EBITDA, PEG
+  - Piotroski Score
+  - Debt-to-Equity & Debt-to-EBITDA
+  - P/E, P/S, P/BV (Excel-calculated)
 
-## Disclaimer
-This project is for educational and research purposes only.
+- 📈 **Multi-Company Comparison**
+  - Analyze multiple companies in a single run
+  - Side-by-side structured output
+
+- 📁 **Excel Output (Investment-Ready)**
+  - Auto-formatted Excel workbook
+  - Percentage & numeric formatting
+  - Frozen headers and clean layout
+
+- 🔐 **Secure Credential Handling**
+  - Credentials managed via environment variables
+  - `.gitignore` prevents sensitive data leaks
+
+---
+
+## 🛠️ Tech Stack
+
+- **Python**
+- **Selenium** – Web automation
+- **Pandas** – Data processing
+- **OpenPyXL** – Excel formatting
+- **Regex** – Data cleaning
+
+---
+
+## 📁 Project Structure
+
+screener_fundamental_extractor/
+│
+├── screener_scraper.py # Main automation & extraction script
+├── requirements.txt
+├── README.md
+└── .gitignore
